@@ -1,0 +1,2 @@
+recursive-include rmu_customizations/patches *
+recursive-include rmu_customizations/templates *
