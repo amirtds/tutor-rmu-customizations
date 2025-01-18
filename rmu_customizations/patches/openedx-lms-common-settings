@@ -1,1 +1,32 @@
+FEATURES["ENABLE_COURSE_DISCOVERY"] = True
 FEATURES['ENABLE_LTI_PROVIDER'] = True
+COURSE_MODE_DEFAULTS = {
+    'android_sku': None,
+    'bulk_sku': None,
+    'currency': 'usd',
+    'description': None,
+    'expiration_datetime': None,
+    'ios_sku': None,
+    'min_price': 0,
+    'name': 'Verified',
+    'sku': None,
+    'slug': 'verified',
+    'suggested_prices': '',
+}
+
+# Needed for passing user session with the LTI Request
+SESSION_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE_FORCE_ALL = True
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'
+
+# Modern approach for iframe embedding
+X_FRAME_OPTIONS = "ALLOW"
+SECURE_REFERRER_POLICY = "same-origin"
+CSP_FRAME_ANCESTORS = ["'self'", "http://localhost:8000"]
+
+# CORS settings for LTI
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = ['http://ncec.localhost:3000', 'http://localhost:3000', 'https://nce.cubite.io', 'https://nce.cubite.dev', 'https://nce.center']
+FEATURES['ENABLE_CORS_HEADERS'] = True
