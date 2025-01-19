@@ -28,5 +28,5 @@ CSP_FRAME_ANCESTORS = ["'self'", "http://localhost:8000"]
 
 # CORS settings for LTI
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = ['http://ncec.localhost:3000', 'http://localhost:3000', 'https://rmu.cubite.io', 'https://rmu.cubite.dev']
+CORS_ORIGIN_WHITELIST = ['http://rmu.localhost:3000', 'http://localhost:3000', 'https://rmu.cubite.io', 'https://rmu.cubite.dev']
 FEATURES['ENABLE_CORS_HEADERS'] = True
