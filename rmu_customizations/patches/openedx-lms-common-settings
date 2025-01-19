@@ -24,7 +24,7 @@ CSRF_COOKIE_SAMESITE = 'None'
 # Modern approach for iframe embedding
 X_FRAME_OPTIONS = "ALLOW-FROM http://rmu.localhost:3000"
 SECURE_REFERRER_POLICY = "same-origin"
-CSP_FRAME_ANCESTORS = ["'self'", "http://localhost:8000"]
+CSP_FRAME_ANCESTORS = ["'self'", "http://rmu.localhost:3000"]
 
 # CORS settings for LTI
 CORS_ALLOW_CREDENTIALS = True
