@@ -1,3 +1,3 @@
 RUN pip install -e git+https://github.com/mitodl/edx-username-changer.git@main#egg=edx-username-changer
 RUN pip install git+https://github.com/amirtds/tutor-overrides.git@143d279c60a894b5b7053e00cd6b712ebefc948c
-RUN pip install git+https://github.com/amirtds/cubite_openedx_apis@38af7cd473eb108a07c74e38f21098640670a978
+RUN pip install git+https://github.com/amirtds/cubite_openedx_apis@6eaf65c2567580942f7dda888ce106ca974dfb80
