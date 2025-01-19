@@ -21,11 +21,6 @@ SESSION_COOKIE_SAMESITE_FORCE_ALL = True
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'None'
 
-# Modern approach for iframe embedding
-X_FRAME_OPTIONS = "ALLOW"
-SECURE_REFERRER_POLICY = "same-origin"
-CSP_FRAME_ANCESTORS = ["'self'", "http://localhost:8000"]
-
 # CORS settings for LTI
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = ['http://rmu.localhost:3000', 'http://localhost:3000', 'https://rmu.cubite.io', 'https://rmu.cubite.dev']
